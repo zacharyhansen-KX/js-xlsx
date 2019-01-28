@@ -33,7 +33,7 @@ function process_wb(wb) {
 	htmlout.innerHTML = XLSX.utils.sheet_to_html(wb.Sheets[wb.SheetNames[0]], {editable:true}).replace("<table", '<table id="table" border="1"');
 }
 
-var url = "sheetjs.xlsx";
+var url = "https://s3-us-west-2.amazonaws.com/kxr-images-public/KX-A1B1-462437-MSISFFormHDMUQSLA7862987.xlsx";
 document.getElementById('fileurl').innerHTML = '<a href="' + url + '">Download original file</a>';
 document.getElementById('outfile').innerHTML = '<a href="' + demo + '.' + book + '">Download new file</a>';
 
